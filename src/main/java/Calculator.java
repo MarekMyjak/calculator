@@ -20,6 +20,6 @@ class Calculator {
                 .stream()
                 .filter(operation -> operation.apply(sign))
                 .findAny()
-                .orElseThrow(IllegalAccessError::new);
+                .orElseThrow(IllegalArgumentException::new);
     }
 }
